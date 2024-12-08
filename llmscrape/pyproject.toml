@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "llmscrape"
+version = "0.1.0"
+description = ""
+authors = ["pyc <pyc@mykitties.life>"]
+readme = "README.md"
+packages = [{ include = "scrapper" }]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+crawl4ai = "^v0.3.75"
+llama-index = "^0.12.2"
+llama-index-llms-ollama = "^0.4.2"
+llama-index-embeddings-ollama = "^0.4.0"
+llama-index-program-guidance = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
